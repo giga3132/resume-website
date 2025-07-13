@@ -8,14 +8,29 @@
 .project-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
-  margin: 0 auto;
+  gap: 20px;
+}
+
+@media(max-width: 785px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1050px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .project-container {
-  background-color: #edf2f4;
+  background-color: #adb5bd;
+  color: white;
   padding: 20px;
   border-radius: 10px;
+  flex: 1;
+  max-width: 300px;
+  justify-self: center;
 
 }
 
