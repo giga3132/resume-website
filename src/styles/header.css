@@ -1,5 +1,5 @@
 .header {
-  height: 60px;
+  height: 70px;
 
   display: flex;
   flex-direction: row;
@@ -12,13 +12,32 @@
   z-index: 100;
 
   align-items: center;
+
+  box-shadow: 0 4px 2px -2px #ced4da;
+
+  color: #343a40;
+  background-color: #e9ecef;
 }
 
 .header-left {
-  margin: 20px;
+  margin: 0 10px;
+  font-size: 24px;
+  font-weight: 200;
 }
 
 .header-right {
   display: flex;
+
   margin: 20px;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.profile-access,
+.education-access,
+.experience-access,
+.projects-access,
+.contact-access {
+  margin: 10px;
 }
