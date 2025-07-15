@@ -1,22 +1,42 @@
-.timeline {
+.education-timeline {
   position: relative;
   margin: 0 auto;
 }
 
-.timeline::after {
+/* Timeline */
+.education-timeline::after {
   content: '';
+  background-color: #dee2e6;
   position: absolute;
   width: 2px;
-  background-color: black;
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -3px;
 }
 
 .evidence-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+/* Points on timeline */
+.evidence-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 13px;
+  height: 13px;
+
+  background-color: #212529;
+  border-radius: 50%;
+  margin-left: -5px;
+  z-index: 1;
+
+}
+
+.evidence-container-right {
+  margin-left: 20px;
 }
 
 .project-header {
