@@ -41,3 +41,11 @@
 .contact-access {
   margin: 10px;
 }
+
+.profile-access:hover,
+.education-access:hover,
+.experience-access:hover,
+.projects-access:hover,
+.contact-access:hover {
+  cursor: pointer;
+}

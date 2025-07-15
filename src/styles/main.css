@@ -1,3 +1,6 @@
+
+
+
 .project-header {
   text-align: center;
   margin-bottom: 60px;
@@ -39,3 +42,44 @@
   border-radius: 10px;
   object-fit: cover;
 } 
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 200px 0;
+}
+
+.contact-container {
+  padding: 60px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+
+  background-color: #ced4da;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  
+}
+
+.contact-left {
+  position: relative;
+
+
+  height: 250px;
+  width: 250px;
+}
+
+.contact-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.contact-right {
+  height: 250px;
+  width: 250px;
+}
