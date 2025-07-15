@@ -1,5 +1,23 @@
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
 
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
 
+.evidence-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .project-header {
   text-align: center;
