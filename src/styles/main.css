@@ -14,18 +14,6 @@
   gap: 20px;
 }
 
-@media(max-width: 785px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 1050px) {
-  .project-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 .project-container {
   background-color: #adb5bd;
   color: white;
@@ -62,12 +50,11 @@
   
 }
 
+
 .contact-left {
   position: relative;
-
-
-  height: 250px;
-  width: 250px;
+  
+  height: 100%;
 }
 
 .contact-title {
@@ -76,10 +63,70 @@
   left: 0;
 
   font-size: 23px;
+  font-weight: 500;
+}
+
+.contact-email {
+  margin: 45px 20px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid black;
+}
+
+.email-title {
   font-weight: 600;
+  margin-bottom: 0;
+}
+
+.personal-email {
+  font-weight: 400;
+  margin: 0;
+}
+
+.socials-container {
+  position: absolute;
+  bottom: 0;
+  margin-top: 20px;
+  height: 29px;
+  
+  display: flex;
+}
+
+.github-icon,
+.linkedin-icon {
+  height: 100%;
+  margin: 0 20px 0 0;
+}
+
+.github-icon:hover,
+.linkedin-icon:hover {
+  cursor: pointer;
 }
 
 .contact-right {
   height: 250px;
   width: 250px;
+}
+
+/* Media Queries*/
+
+@media(max-width: 785px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  
+  .socials-container {
+    position: static;
+  }
+}
+
+@media (min-width: 1050px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
 }
