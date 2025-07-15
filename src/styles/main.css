@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   margin: 200px 0;
+  background-color: #e9ecef;
 }
 
 .contact-container {
@@ -53,7 +54,7 @@
 
 .contact-left {
   position: relative;
-  
+
   height: 100%;
 }
 
