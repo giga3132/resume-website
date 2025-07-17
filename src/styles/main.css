@@ -9,7 +9,7 @@
   background-color: #dee2e6;
   position: absolute;
   width: 2px;
-  top: 0;
+  top: 3px;
   bottom: 0;
   left: 50%;
 }
@@ -17,22 +17,36 @@
 .evidence-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
 }
 
 /* Points on timeline */
 .evidence-container::after {
   content: '';
   position: absolute;
-  top: 0;
+  top: 3px;
   left: 50%;
   width: 13px;
   height: 13px;
 
-  background-color: #212529;
+  background-color: #780000;
   border-radius: 50%;
   margin-left: -5px;
   z-index: 1;
 
+}
+
+.evidence-container-left {
+  display: flex;
+  justify-content: right;
+  
+  padding-right: 10px;
+  margin-top: 0;
+}
+
+.evidence-container-left h3 {
+  margin-top: 0;
+  margin-right: 45px;
 }
 
 .evidence-container-right {
