@@ -1,22 +1,22 @@
-.education-timeline {
+.timeline {
   position: relative;
   margin: 0 auto;
 }
 
 /* Timeline */
-.education-timeline::after {
+.timeline::after {
   content: '';
   background-color: #dee2e6;
   position: absolute;
   width: 2px;
   top: 3px;
   bottom: 0;
-  left: 50%;
+  left: 33%;
 }
 
 .evidence-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   position: relative;
   margin-bottom: 50px;
 }
@@ -26,7 +26,7 @@
   content: '';
   position: absolute;
   top: 3px;
-  left: 50%;
+  left: 33%;
   width: 13px;
   height: 13px;
 
@@ -51,7 +51,12 @@
 }
 
 .evidence-container-right {
-  margin-left: 20px;
+  margin-left: 30px;
+}
+
+.evidence-title {
+  margin-top: 0;
+  font-weight: 600;
 }
 
 .project-header {
