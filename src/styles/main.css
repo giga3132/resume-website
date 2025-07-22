@@ -1,11 +1,17 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .profile-container {
   display: grid;
   grid-template-columns: 350px 350px;
-  padding-bottom: 50px;
-  height: 500px;
+  height: 100%;
   justify-content: center;
-  justify-items: center;
-  align-items: center;
+
+  background-color: #ced4da;
 }
 
 .profile-left {
@@ -16,17 +22,20 @@
 }
 
 .profile-description {
-  padding-top: 40px;
+  font-size: 24px;
+  font-weight: 200;
 }
 
 
 .profile-right {
   height: 400px;
+  justify-self: right;
 }
 
 .profile-picture {
   height: 100%;
   border-radius: 10px;
+
 }
 
 .section-header {
@@ -130,7 +139,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 200px 0;
+  margin: 200px 0 0 0;
   background-color: #e9ecef;
 }
 
