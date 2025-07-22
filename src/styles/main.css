@@ -11,53 +11,17 @@
 .profile-left {
   padding: 20px;
   height: 360px;
-  position: relative;
 
-  background-color: #1e1e1e;
-  color: white;
-
-  font-family: monospace;
-  font-size: 14px;
   border-radius: 10px;
-}
-
-.profile-introduction-header {
-  position: absolute;
-  top: 0px;
-  left: 0px; 
-  right: 0px;
-  height: 40px;
-  align-items: center;
-  background-color: #252526;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.profile-introduction-icon {
-  color: white;
-  height: 80%;
-  margin-right: 5px;
-}
-.profile-introduction-title {
-  margin: 0px;
-  height: 20px;
-  display: inline-block;
-  padding: 10px;
-  background-color: #1e1e1e;  
-  border-top-left-radius: 10px;
 }
 
 .profile-description {
   padding-top: 40px;
 }
 
-.profile-colored-text {
-  color: #68cdfe;
-}
 
 .profile-right {
   height: 400px;
-  margin-left: 30px;
 }
 
 .profile-picture {
