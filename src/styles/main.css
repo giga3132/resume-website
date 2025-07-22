@@ -1,7 +1,19 @@
 .profile-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 350px 350px;
   margin-bottom: 50px;
+  height: 400px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.profile-right {
+  height: 300px;
+}
+
+.profile-picture {
+  height: 100%;
 }
 
 .section-header {
@@ -181,6 +193,10 @@
 /* Media Queries*/
 
 @media(max-width: 785px) {
+  .profile-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  
   .project-grid {
     grid-template-columns: 1fr;
   }
