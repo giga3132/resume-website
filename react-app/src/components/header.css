@@ -1,0 +1,51 @@
+.header {
+  height: 70px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  align-items: center;
+
+  box-shadow: 0 4px 2px -2px #ced4da;
+
+  color: #343a40;
+  background-color: #e9ecef;
+}
+
+.header-left {
+  margin: 0 10px;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.header-right {
+  display: flex;
+
+  margin: 20px;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.profile-access,
+.education-access,
+.experience-access,
+.projects-access,
+.contact-access {
+  margin: 10px;
+}
+
+.profile-access:hover,
+.education-access:hover,
+.experience-access:hover,
+.projects-access:hover,
+.contact-access:hover {
+  cursor: pointer;
+}
