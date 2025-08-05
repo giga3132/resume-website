@@ -3,6 +3,7 @@
 .projects,
 .contact {
   scroll-margin-top: 70px;
+  scroll-behavior: smooth;
 }
 
 .profile {

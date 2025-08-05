@@ -50,4 +50,5 @@
 .projects-access:hover,
 .contact-access:hover {
   cursor: pointer;
+  color: #6c757d;
 }
