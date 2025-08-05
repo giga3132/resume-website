@@ -126,6 +126,10 @@
   justify-content: center;
 }
 
+.project-name-container {
+  display: inline-block;
+}
+
 .project-container {
   background-color: #adb5bd;
   color: white;

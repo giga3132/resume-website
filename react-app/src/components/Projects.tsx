@@ -23,10 +23,10 @@ const Projects = () => {
       setIndex(isActive ? 0 : itemIndex);
     }
     return (
-      <>
-        <div>{projectName}</div>
+      <div>
+        <div className="project-name-container">{projectName}</div>
         <button onClick={handleClick}>{isActive ? '-' : '+'}</button>
-      </>
+      </div>
     )
   }
 
