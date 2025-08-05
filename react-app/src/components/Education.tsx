@@ -2,7 +2,7 @@ import React from 'react'
 
 const Education = () => {
   return (
-    <section>
+    <section id="education" className="education">
       <hr className="section-delimiter" />
       <h1 className="section-header">Education</h1>
       <hr className="section-delimiter" />

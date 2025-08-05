@@ -41,6 +41,7 @@
 .contact-access {
   margin: 10px;
   color: #343a40;
+  text-decoration: none;
 }
 
 .profile-access:hover,

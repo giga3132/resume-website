@@ -2,7 +2,7 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <section>
+    <section id="experience" className="experience">
       <hr className="section-delimiter" />
       <h1 className="section-header">Experience</h1>
       <hr className="section-delimiter" />

@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import './components/general.css'
+import './general.css'
 import './components/header.css'
 import './components/main.css'
 
