@@ -3,7 +3,6 @@
 .projects,
 .contact {
   scroll-margin-top: 70px;
-  scroll-behavior: smooth;
 }
 
 .profile {
@@ -122,8 +121,9 @@
 .project-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 0;
   margin-top: 80px;
+  justify-content: center;
 }
 
 .project-container {
