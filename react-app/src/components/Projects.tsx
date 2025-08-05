@@ -4,16 +4,28 @@ import { useState } from 'react';
 const Projects = () => {
   const [index, setIndex] = useState(0);
 
+  const projects = [
+    "project 1",
+    "project 2",
+    "project 3"
+  ];
+
+
   interface ListItemProps {
     projectName: string;
     itemIndex: number;
+    isActive: boolean;
+    setIndex: (index: number) => void;
   }
 
-  function ListItem ({ projectName, itemIndex }: ListItemProps) {
+  function ListItem ({ projectName, itemIndex, isActive, setIndex }: ListItemProps) {
+    function handleClick() {
+      setIndex(isActive ? 0 : itemIndex);
+    }
     return (
       <>
         <div>{projectName}</div>
-        <button>{index == itemIndex ? '-' : '+'}</button>
+        <button onClick={handleClick}>{isActive ? '-' : '+'}</button>
       </>
     )
   }
@@ -25,9 +37,14 @@ const Projects = () => {
       <hr className="section-delimiter" />
       <div className="project-grid" >
         <div>
-          <ListItem projectName="item 1" itemIndex ={1}></ListItem>
-          <ListItem projectName="item 2" itemIndex ={2}></ListItem>
-          <ListItem projectName="item 3" itemIndex ={3}></ListItem>
+          {projects.map((projectName, i) => (
+            <ListItem 
+            projectName = {projectName}
+            itemIndex = {i + 1}
+            isActive = {index === i + 1}
+            setIndex={setIndex}
+            />
+          ))}
         </div>
         <div>2</div>
       </div>
