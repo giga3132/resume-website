@@ -1,4 +1,6 @@
 import React from 'react'
+import GitHubIcon from "../assets/github-icon.png"
+import LinkedInIcon from "../assets/linkedin-icon.png"
 
 const Contact = () => {
   return (
@@ -13,8 +15,12 @@ const Contact = () => {
             <p className="personal-email">gianlucacabrera@gmail.com</p>
           </div>
           <div className="socials-container">
-            <img src="assets/github-icon.png" className="github-icon" />
-            <img src="assets/linkedin-icon.png" className="linkedin-icon" />
+            <a href="https://github.com/giga3132" target="_blank">
+              <img src={GitHubIcon} className="github-icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/gianluca-cabrera-8bb0102a0" target="_blank">
+              <img src={LinkedInIcon} className="linkedin-icon" />
+            </a>
           </div>
         </div>
         <div className="contact-right">
