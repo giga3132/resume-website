@@ -15,6 +15,7 @@ const Projects = () => {
     {name: "project 3", image: PlaceholderPicture, description: "I like chalk", index: 3},
   ];
 
+  const selectedProject = projects.find(project => project.index === index);
 
   return (
     <section id="projects" className="projects">
@@ -34,12 +35,12 @@ const Projects = () => {
           ))}
         </div>
         <div>
-          {index !== 0 && projects.filter(project => project.index === index).map(project => (<ProjectView
-            projectName = {project.name}
-            projectImage = {project.image}
-            projectDescription = {project.description}
-            projectIndex = {project.index}
-          />))}
+          {index !== 0 && selectedProject && (<ProjectView
+            projectName = {selectedProject.name}
+            projectImage = {selectedProject.image}
+            projectDescription = {selectedProject.description}
+            projectIndex = {selectedProject.index}
+          />)}
         </div>
       </div>
     </section>
