@@ -52,7 +52,7 @@ const Projects = () => {
             
           ))}
         </div>
-        <div>
+        <div className="project-view-container">
           {index !== 0 && selectedProject && (<ProjectView
             projectName = {selectedProject.name}
             projectImage = {selectedProject.image}

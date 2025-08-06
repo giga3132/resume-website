@@ -2,7 +2,7 @@ import './general.css'
 import './components/header.css'
 import './components/main.css'
 
-import Header from './components/header'
+import Header from './components/Header'
 import Profile from './components/Profile'
 import Education from './components/Education'
 import Experience from './components/Experience'
