@@ -1,34 +1,20 @@
 import React from 'react'
 import { useState } from 'react';
+import ListItem from '../components/ListItem.tsx';
+import ProjectView from '../components/ProjectView.tsx';
+
+import PlaceholderPicture from '../assets/placeholder.jpg';
+
 
 const Projects = () => {
   const [index, setIndex] = useState(0);
 
   const projects = [
-    "project 1",
-    "project 2",
-    "project 3"
+    {name: "project 1", image: PlaceholderPicture, description: "a small description of project 1", index: 1},
+    {name: "project 2", image: PlaceholderPicture, description: "a lifechanging revelation", index: 2},
+    {name: "project 3", image: PlaceholderPicture, description: "I like chalk", index: 3},
   ];
 
-
-  interface ListItemProps {
-    projectName: string;
-    itemIndex: number;
-    isActive: boolean;
-    setIndex: (index: number) => void;
-  }
-
-  function ListItem ({ projectName, itemIndex, isActive, setIndex }: ListItemProps) {
-    function handleClick() {
-      setIndex(isActive ? 0 : itemIndex);
-    }
-    return (
-      <div>
-        <div className="project-name-container">{projectName}</div>
-        <button onClick={handleClick}>{isActive ? '-' : '+'}</button>
-      </div>
-    )
-  }
 
   return (
     <section id="projects" className="projects">
@@ -37,16 +23,24 @@ const Projects = () => {
       <hr className="section-delimiter" />
       <div className="project-grid" >
         <div>
-          {projects.map((projectName, i) => (
+          {projects.map((project, i) => (
             <ListItem 
-            projectName = {projectName}
+            projectName = {project.name}
             itemIndex = {i + 1}
             isActive = {index === i + 1}
             setIndex={setIndex}
             />
+            
           ))}
         </div>
-        <div>2</div>
+        <div>
+          {index !== 0 && projects.filter(project => project.index === index).map(project => (<ProjectView
+            projectName = {project.name}
+            projectImage = {project.image}
+            projectDescription = {project.description}
+            projectIndex = {project.index}
+          />))}
+        </div>
       </div>
     </section>
   )
