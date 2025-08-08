@@ -1,8 +1,10 @@
 import React from 'react'
 import GitHubIcon from "../assets/github-icon.png"
 import LinkedInIcon from "../assets/linkedin-icon.png"
+import Form from '../components/Form.tsx';
 
 const Contact = () => {
+
   return (
     <section id="contact" className="contact">
       <div className="contact-container">
@@ -24,7 +26,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact-right">
-          Form
+          <Form />
         </div>  
       </div>
     </section>
