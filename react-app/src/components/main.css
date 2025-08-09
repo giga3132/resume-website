@@ -360,3 +360,19 @@
     position: static;
   }
 }
+
+@media(min-width: 785px) and (max-width: 1020px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-list-container {
+    border-right: 3px solid rgba(0, 0, 0, 0.323);
+    border-bottom: none;
+  }
+
+  .project-view-container {
+    border-top: none;
+    border-left: 3px solid rgba(0, 0, 0, 0.323);
+  }
+}
