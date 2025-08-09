@@ -1,4 +1,3 @@
-import React from 'react'
 import GitHubIcon from "../assets/github-icon.png"
 import LinkedInIcon from "../assets/linkedin-icon.png"
 import Form from '../components/Form.tsx';

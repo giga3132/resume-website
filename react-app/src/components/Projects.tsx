@@ -1,9 +1,7 @@
-import React from 'react'
 import { useState } from 'react';
 import ListItem from '../components/ListItem.tsx';
 import ProjectView from '../components/ProjectView.tsx';
 
-import PlaceholderPicture from '../assets/placeholder.jpg';
 import ResumeWebsitePreview from "../assets/resume-website-preview.png"
 
 

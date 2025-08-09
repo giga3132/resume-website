@@ -1,5 +1,6 @@
 import ProfilePicture from '../assets/passport-photo-2025-07.jpg';
 
+
 const Profile = () => {
   return (
     <section className="profile">
