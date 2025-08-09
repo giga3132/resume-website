@@ -314,6 +314,13 @@
   cursor: pointer;
 }
 
+.confirmation-message {
+  display: none;
+  margin-top: 8px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.301);
+}
+
 /* Media Queries*/
 
 @media(max-width: 785px) {
