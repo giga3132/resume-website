@@ -299,10 +299,11 @@
   margin: 0 0 15px 0;
   border: 1px solid black;
   padding: 7px 30px;
+  resize: none;
 }
 
 .submit-button {
-  margin: 82px 0 0 0;
+  margin: 2px 0 0 0;
   padding: 6px 25px;
   display: block;
   background-color: rgba(255, 255, 255, 0.268);
@@ -319,9 +320,28 @@
   .profile-container {
     grid-template-columns: 1fr 1fr;
   }
+
+  .profile-title {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  .profile-description {
+  font-size: 19px;
+  }
   
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-list-container {
+    border-right: 3px solid rgba(0, 0, 0, 0.323);
+    border-bottom: none;
+  }
+
+  .project-view-container {
+    border-top: none;
+    border-left: 3px solid rgba(0, 0, 0, 0.323);
   }
 
   .contact-container {

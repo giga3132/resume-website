@@ -52,3 +52,19 @@
   cursor: pointer;
   color: #6c757d;
 }
+
+@media(max-width: 785px) {
+ .header-left {
+  margin-right: 0;
+ }
+
+.profile-access,
+.education-access,
+.experience-access,
+.projects-access,
+.contact-access {
+  margin: 5px;
+  color: #343a40;
+  text-decoration: none;
+}
+}
