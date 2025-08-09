@@ -17,8 +17,10 @@
   grid-template-columns: 350px 350px;
   height: 100%;
   justify-content: center;
+  border-radius: 10px;
 
   background-color: #ced4da;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .profile-left {
@@ -28,9 +30,15 @@
   border-radius: 10px;
 }
 
+.profile-title {
+  font-weight: 500;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
 .profile-description {
-  font-size: 24px;
-  font-weight: 200;
+  font-size: 26px;
+  font-weight: 300;
 }
 
 
@@ -42,7 +50,6 @@
 .profile-picture {
   height: 100%;
   border-radius: 10px;
-
 }
 
 .section-header {
@@ -121,19 +128,22 @@
 .project-grid {
   display: grid;
   grid-template-columns: 500px 500px;
-  height: 400px;
   gap: 0;
   margin-top: 80px;
   justify-content: center;
-  padding: 50px 0;
-  border: 5px solid #6c757d90;
+}
+
+.project-list-container {
+    border-left: 3px solid rgba(0, 0, 0, 0.323);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.323);
 }
 
 .project-item-container {
   display: flex;
   justify-content: space-between;
   height: 50px;
-  border-top: 2px solid rgba(0, 0, 0, 0.2);
+  border-top: 3px solid rgba(0, 0, 0, 0.323);
+  
 }
 
 .project-item-container:hover {
@@ -144,7 +154,7 @@
   font-size: 26px;
   margin: auto 0;
   display: inline-block;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .project-toggle-button {
@@ -158,15 +168,50 @@
   
 }
 
+.project-toggle-button:hover {
+  cursor: pointer;
+}
+
 .project-view-container {
-  margin-left: 30px;
+  padding: 20px;
+  border-right: 3px solid rgba(0, 0, 0, 0.323);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.323);
+  border-top: 3px solid rgba(0, 0, 0, 0.323);
+}
+
+.project-view-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .project-image {
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
-} 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.132), 0 6px 20px 0 rgba(0, 0, 0, 0.132);
+
+}
+
+.project-description {
+  margin: 20px 0;
+  font-weight: 500;
+
+}
+
+.git-hub-project-button {
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.git-hub-project-button:hover {
+  background-color: rgba(0, 0, 0, 0.711);
+  cursor: pointer;
+}
 
 .contact {
   display: flex;
@@ -229,10 +274,14 @@
   display: flex;
 }
 
+.github-link,
+.linkedin-link {
+  margin: 0 20px 0 0;
+}
+
 .github-icon,
 .linkedin-icon {
   height: 100%;
-  margin: 0 20px 0 0;
 }
 
 .github-icon:hover,
@@ -243,6 +292,25 @@
 .contact-right {
   height: 250px;
   width: 250px;
+}
+
+.input-field {
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0 0 15px 0;
+  border: 1px solid black;
+  padding: 7px 30px;
+}
+
+.submit-button {
+  margin: 82px 0 0 0;
+  padding: 6px 25px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.268);
+  border: 1px solid rgba(0, 0, 0, 0.592);
+}
+
+.submit-button:hover {
+  cursor: pointer;
 }
 
 /* Media Queries*/

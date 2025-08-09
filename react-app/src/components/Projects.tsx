@@ -4,6 +4,7 @@ import ListItem from '../components/ListItem.tsx';
 import ProjectView from '../components/ProjectView.tsx';
 
 import PlaceholderPicture from '../assets/placeholder.jpg';
+import ResumeWebsitePreview from "../assets/resume-website-preview.png"
 
 
 const Projects = () => {
@@ -12,25 +13,11 @@ const Projects = () => {
   const projects = [
     {
       name: "Resume Website",
-      image: PlaceholderPicture,
-      description: "This website, something, something, something.",
+      image: ResumeWebsitePreview,
+      description: "This website to showcase my resume. Made using React and TypeScript.",
       link: "https://github.com/giga3132/resume-website",
       index: 1
-    },
-    {
-      name: "project 2",
-      image: PlaceholderPicture,
-      description: "a lifechanging revelation",
-      link: "",
-      index: 2
-    },
-    {
-      name: "project 3",
-      image: PlaceholderPicture,
-      description: "I like chalk",
-      link: "",
-      index: 3
-    },
+    }
   ];
 
   const selectedProject = projects.find(project => project.index === index);
@@ -41,7 +28,7 @@ const Projects = () => {
       <h1 className="section-header">Projects</h1>
       <hr className="section-delimiter" />
       <div className="project-grid" >
-        <div>
+        <div className="project-list-container">
           {projects.map((project, i) => (
             <ListItem 
             projectName = {project.name}

@@ -33,11 +33,11 @@ const Form = () => {
       );
   }
   return (
-    <form ref={gmailForm} onSubmit={handleSubmit}>
-      <input type="text" name="name" value={form.name} placeholder='Your Name' onChange={handleChange} required></input>
-      <input type="text" name="email" value={form.email} placeholder='Your Email Address' onChange={handleChange} required></input>
-      <input type="text" name="message" value={form.message} placeholder="Your Message" onChange={handleChange} required></input>
-      <button type="submit">Submit</button>
+    <form ref={gmailForm} className="form" onSubmit={handleSubmit}>
+      <input type="text" className="input-field" name="name" value={form.name} placeholder='Your Name' onChange={handleChange} required></input>
+      <input type="text" className="input-field" name="email" value={form.email} placeholder='Your Email Address' onChange={handleChange} required></input>
+      <input type="text" className="input-field" name="message" value={form.message} placeholder="Your Message" onChange={handleChange} required></input>
+      <button type="submit" className="submit-button">Submit</button>
     </form>
   )
 }

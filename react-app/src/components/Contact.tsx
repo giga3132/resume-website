@@ -17,10 +17,10 @@ const Contact = () => {
             <p className="personal-email">gianlucacabrera@gmail.com</p>
           </div>
           <div className="socials-container">
-            <a href="https://github.com/giga3132" target="_blank">
+            <a href="https://github.com/giga3132" className="github-link"target="_blank">
               <img src={GitHubIcon} className="github-icon" />
             </a>
-            <a href="https://www.linkedin.com/in/gianluca-cabrera-8bb0102a0" target="_blank">
+            <a href="https://www.linkedin.com/in/gianluca-cabrera-8bb0102a0" className="linkedin-link" target="_blank">
               <img src={LinkedInIcon} className="linkedin-icon" />
             </a>
           </div>

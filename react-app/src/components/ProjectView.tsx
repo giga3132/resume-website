@@ -9,13 +9,13 @@ interface ProjectView{
 const ProjectView = ({projectName, projectImage, projectDescription, projectLink}: ProjectView) => {
   return (
     <>
-      <div>{projectName}</div>
+      <div className="project-view-name">{projectName}</div>
       <div className="project-container">
         <img className="project-image" src={projectImage}/>
       </div>
-      <div>{projectDescription}</div>
+      <div className="project-description">{projectDescription}</div>
       <a href={projectLink} target="_blank">
-        <button>View on GitHub</button>
+        <button type="button" className="git-hub-project-button">View on GitHub</button>
       </a>
     </>
   )
